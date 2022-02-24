@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    {% for image_name in image_names %}
+      <p><img src='{{ image_name }}' alt=""></p>
+      <hr>
+    {% endfor %}
+
+    <p><h2 class="card-title">Category per Related Videos</h2></p>
+     <p>{{ table|safe }}</p>
+{% endblock content %}
